@@ -3,19 +3,137 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  scroll-behavior: smooth;
+  
+  --red: #ef2f32;
+  --yellow: #fcd528;
+  --orange: #f46e2a;
+}
+.stat{
+  background: fixed center url(../../public/images/stat.png);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif !important;
 }
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.button{
+  background-color: var(--orange);
+}
+.button:hover{
+  background-color: #f46d2a93;
+}
+.zin{
+  z-index: 9999999 !important;
+}
+.text-r{
+  color: var(--red);
+}
+.text-o{
+  color: var(--orange);
+}
+.text-y{
+  color: var(--yellow);
+}
+.wpp{
+  width: auto;
+  height: 60px;
+ 
+}
+
+.ver{
+  margin-top: 50px;
+  margin-left: 100px;
+ 
+}
+
+  .ver :hover {
+
+  border-bottom: var(--orange) solid 3px;
+  transition: opacity 1s ease;
+
+}
+
+.curr{
+  border-bottom: var(--orange) solid 3px;
+  
+}
+.pad{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.bars{
+  color: var(--orange);
+}
+.bars:hover{
+  color: white !important;
+  background-color: var(--orange) !important;
+
+
+
+}
+
+.bt{
+
+  color: white !important; 
+  background-color: var(--orange) !important;
+
+
+}
+
+.bt:hover{
+  background-color: hwb(25 0% 31%) !important;
+}
+
+.mul{
+  font-family: 'Mulish', sans-serif !important;
+}
+
+
+.phone{
+  display: inline;
+  width: 28px;
+  height: 28px;
+  padding-right: 8px;
+
+}
+
+.bicon{
+  color: #0000fe;
+  width: 32px;
+  height: 32px;
+  display: inline;
+}
+
+.wbg{
+  background-color: 	#25D366;
+}
+
+.wbg:hover{
+
+  background-color: 	#1ea851;
+
+
+
+}
+.maxh{
+  max-height: 500px;
+}
+
