@@ -13,6 +13,13 @@
   --yellow: #fcd528;
   --orange: #f46e2a;
 }
+.from-red-600{
+  --tw-gradient-from: #ef2f32 var(--tw-gradient-from-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.text-red-600{
+  color: var(--red) !important;
+}
 .stat{
   background: fixed center url(../../public/images/stat.png);
 }
